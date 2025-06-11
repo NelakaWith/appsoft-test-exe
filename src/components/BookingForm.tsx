@@ -30,7 +30,11 @@ const BookingForm = () => (
       </div>
     </div>
 
+    <label htmlFor="couponCode" className="block text-sm font-medium text-gray-700">
+      Coupon Code
+    </label>
     <input
+      id="couponCode"
       type="text"
       placeholder="Enter Coupon Code"
       className="w-full border rounded p-2 text-sm"
