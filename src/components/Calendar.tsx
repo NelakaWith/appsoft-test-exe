@@ -3,6 +3,7 @@ import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 
 export default function Calendar() {
+  const defaultMonth = new Date();
   return (
     <div className="bg-white p-6 rounded shadow-md">
       <h2 className="text-xl font-semibold mb-4">Availability</h2>
@@ -14,7 +15,13 @@ export default function Calendar() {
           mode="range"
           numberOfMonths={2}
           defaultMonth={defaultMonth}
-          disabled={{ before: new Date(defaultMonth.getFullYear(), defaultMonth.getMonth(), 23) }}
+          disabled={{
+            before: new Date(
+              defaultMonth.getFullYear(),
+              defaultMonth.getMonth(),
+              23
+            ),
+          }}
         />
       </div>
     </div>
