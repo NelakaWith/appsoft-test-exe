@@ -13,8 +13,8 @@ export default function Calendar() {
         <DayPicker
           mode="range"
           numberOfMonths={2}
-          defaultMonth={new Date(2020, 3)} // April 2020
-          disabled={{ before: new Date(2020, 3, 23) }}
+          defaultMonth={defaultMonth}
+          disabled={{ before: new Date(defaultMonth.getFullYear(), defaultMonth.getMonth(), 23) }}
         />
       </div>
     </div>
