@@ -52,7 +52,7 @@ const BookingForm = () => (
         <span>$0</span>
       </div>
       <div className="flex justify-between text-green-600 border-b pb-2">
-        <span>Disc count</span>
+        <span>Discount</span>
         <span>-$0</span>
       </div>
       <div className="flex justify-between font-semibold">
