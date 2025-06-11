@@ -41,7 +41,7 @@ const BookingForm = () => (
         </div>
         <div className="flex justify-between border-b pb-2">
           <span className="flex items-center gap-1">
-            Service Fee <FiInfo className="text-gray-400" />
+            Service Fee <FiInfo className="text-gray-400" aria-hidden="true" />
           </span>
           <span>$0</span>
         </div>
